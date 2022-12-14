@@ -7,6 +7,16 @@
     <title>Snack 4</title>
 </head>
 <body>
-    
+    <?php
+    $arr_num= [];
+    for($i=0; $i <15; $i++) {
+        $numero = rand(1, 100);
+        if(!in_array($numero , $arr_num)){
+            array_push($arr_num , $numero);
+        }
+    }
+    var_dump($arr_num);
+
+    ?>
 </body>
 </html>
